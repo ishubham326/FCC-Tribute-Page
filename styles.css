@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Helvetica Neue", Arial, sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  /*1rem=10px*/
+}
+
+body {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  background-color: rgb(19, 19, 19);
+}
+main {
+  padding: 2rem 0rem;
+  background-color: rgb(24, 24, 24);
+}
+h1 {
+  font-size: 3rem;
+  color: rgb(236, 236, 236);
+  animation: fade 1s forwards ease-in;
+}
+
+p {
+  font-size: 2rem;
+  animation: fade 2s forwards ease-in;
+}
+
+#img-div {
+  justify-content: center;
+  text-align: justify;
+  width: 95%;
+  margin: auto;
+  color: rgb(236, 236, 236);
+}
+#img-div figcaption {
+  text-align: end;
+  font-size: 1.2rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: auto;
+  padding: 2rem 0;
+  animation: fade 2s forwards ease-in;
+  animation: move 10s infinite ease-in-out alternate-reverse;
+}
+a {
+  color: deeppink;
+}
+a:visited {
+  color: darkkhaki;
+}
+a:hover {
+  color: deeppink;
+}
+@media (max-width: 460px) {
+  h1 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+
+  figcaption {
+    font-size: 1rem;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes move {
+  0% {
+    transform: translateX(0px) translateY(0px);
+  }
+  25% {
+    transform: translateX(10px) translateY(10px);
+  }
+  50% {
+    transform: translateX(-10px) translateY(10px);
+  }
+  75% {
+    transform: translateX(10px) translateY(-10px);
+  }
+}
